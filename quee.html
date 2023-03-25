@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style type="text/css">
+	.container{
+		align-content: center;
+	}
+	#main
+	
+	{
+		background-color: lightblue;
+	}
+</style>
+<body>
+	<div class="container">
+		<header>
+			<center><h1>Online Quiz</h1></center>
+		</header>
+		<div id="main">
+			<div class="question1">
+				<h2>Question 1:</h2>
+				<p>WHO IS THE CAPTAIN OF CSK?</p>
+				<label >
+					<input type="radio" name="q1" value="a" >
+					a) ROHIT
+				</label>
+				<label>
+					<input type="radio" name="q1" value="b">
+					b)KOHLI
+				</label>
+				<label onclick="marks()">
+					<input type="radio" name="q1" value="c">
+					c) MAHENDRA SINGH DHONI
+				</label>
+				<label>
+					<input type="radio" name="q1" value="d">
+					d) NONE
+				</label>
+			
+				<h2>Question 2:</h2>
+				<p>WHICH COLOR IS THE JERSEY OF CSK</p>
+				<label>
+					<input type="radio" name="q2" value="a">
+					a) PINK
+				</label>
+				<label>
+					<input type="radio" name="q2" value="b">
+					b) BLUE
+				</label>
+				<label>
+					<input type="radio" name="q2" value="c">
+					c) RED
+				</label>
+				<label onclick="marks()">
+					<input type="radio" name="q2" value="d">
+					d) YELLOW
+				</label>
+			
+				<h2>Question 3:</h2>
+				<p>HOW MANY TROPHIES WON BY CSK?</p>
+				<label>
+					<input type="radio" name="q3" value="a">
+					a) 4
+				</label>
+				<label onclick="marks()">
+					<input type="radio" name="q3" value="b">
+					b) 3
+				</label>
+				<label>
+					<input type="radio" name="q3" value="c">
+					c) 1
+				</label>
+				<label>
+					<input type="radio" name="q3" value="d">
+					d) nill
+				</label>
+			
+				<h2>Question 4:</h2>
+				<p>WHAT IS DHONI NAMED IN CHENNAI?</p>
+				<label onclick="marks()">
+					<input type="radio" name="q4" value="a">
+					a) THALA
+				</label>
+				<label>
+					<input type="radio" name="q4" value="b">
+					b) CHINNA THALA
+				</label>
+				<label>
+					<input type="radio" name="q4" value="c">
+					c) TONY
+				</label>
+				<label>
+					<input type="radio" name="q4" value="d">
+					d) MAHI
+				</label>
+			
+				<h2>Question 5:</h2>
+				<p>WHAT IS THE DHONIS FAVOURITE SHOT?</p>
+				<label onclick="marks()">
+					<input type="radio" name="q5" value="a">
+					a) HELICOPTER
+				</label>
+				<label>
+					<input type="radio" name="q5" value="b">
+					b) CUT SHOT
+				</label>
+				<label>
+					<input type="radio" name="q5" value="c">
+					c) STRAIGHT DRIVE
+				</label>
+				<label>
+					<input type="radio" name="q5" value="d">
+					d) COVER DRIVE
+				</label>
+			</div>
+			<center><button type="submit" onclick="func1()"><h3>Submit</h3></button></center>
+		<br>
+		<br>
+		<center><button ><a href="quee.html">Restart Quiz</a></button></center>
+	</div>
+	</div>
+	<script>
+		var count=0;
+		function marks(){
+			count=count+1
+		}
+        function func1(){
+            alert("Your Score is: "+count);
+        }
+    </script>
+</body>
+</html>
